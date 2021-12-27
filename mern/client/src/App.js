@@ -10,13 +10,14 @@ import Create from "./components/create";
 import Login from "./components/login";
 import Register from "./components/register";
 import Home from "./components/home";
+import Admin from "./components/admin";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Route exact path="/">
-        <Home />
+        <Admin />
       </Route>
       <Route path="/edit/:id" component={Edit} />
       <Route path="/create">
